@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Cartoons">
+
+<head>
+    <meta charset="UTF-8">
+    <title>More Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body ng-controller="CartoonController">
+    <header></header>
+
+    <div class="containter">
+        <div class="row">
+            <div class="col-xs-12 bar">
+
+                <div class="col-xs-4">
+                    <input class="form-control" ng-model="title" type="text" placeholder="Title">
+                </div>
+                <div class="col-xs-4">
+                    <input class="form-control" ng-model="description" type="text" placeholder="Description">
+                </div>
+                <div class="col-xs-4">
+                    <input class="form-control" ng-model="image" type="text" placeholder="Image URL">
+                </div>
+                <br>
+                <button class="center-block btn" id="button" ng-click="updateCartoon()">Submit</button>
+                <br>
+                <div ng-repeat="item in cartoonList" class="output text-center">
+                    <h1> {{ item.title }} </h1>
+                    <br>
+                    <p> {{ item.description }} </p>
+                    <br>
+                    <img ng-src="{{ item.url }}"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

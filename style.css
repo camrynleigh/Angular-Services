@@ -1,0 +1,25 @@
+header {
+    height: 400px;
+    background-image: url("http://images.thoughtsmedia.com//adt/auto/1305777681.usr110024.png");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    background-image: url("http://orig07.deviantart.net/e914/f/2014/137/2/c/cartoon_network_morning_background_by_jared33-d7iph12.png");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#button {
+    margin-top: 70px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+input {
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
